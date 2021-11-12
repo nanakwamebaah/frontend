@@ -1,12 +1,35 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    
+    <!--<nav>
+      <ul>
+        <li>
+          <router-link :to="{name: 'catalog'}">catalog products</router-link>
+        </li>
+        <li>
+          <router-link :to="{name: 'About'}">for you</router-link>
+        </li>
+      </ul>
+    </nav>-->
+    <!--<main class="container">
+      <router-view/>
+    </main>-->
     <router-view/>
+    
+    <footer>
+            <p>Copyright 2021</p>
+    </footer>
+    
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    
+  }
+}
+</script>
 
 <style>
 #app {
